@@ -33,6 +33,26 @@ To get started:
 - Run a command twice to hit cache
 ```
 
+## Add package with resolutions
+
+```jsonc
+  // package.json
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
+  }
+```
+
 ```sh
 yarn workspace @repo/ui add @mui/material@5.8.7 @mui/styled-engine @mui/styled-engine-sc@^5.8.0 styled-components@5.3.6
+```
+
+```jsonc
+  // packages/ui/package.json
+  "dependencies": {
+    "@mui/material": "5.8.7",
+    "@mui/styled-engine": "^7.0.1",
+    "@mui/styled-engine-sc": "^5.8.0",
+    // ...
+    "styled-components": "5.3.6"
+  }
 ```
