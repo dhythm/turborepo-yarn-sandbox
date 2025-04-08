@@ -32,3 +32,7 @@ To get started:
    - yarn run lint: Lint all apps and packages
 - Run a command twice to hit cache
 ```
+
+```sh
+yarn workspace @repo/ui add @mui/material@5.8.7 @mui/styled-engine @mui/styled-engine-sc@^5.8.0 styled-components@5.3.6
+```
