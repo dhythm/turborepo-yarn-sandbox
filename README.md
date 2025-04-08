@@ -57,10 +57,6 @@ yarn workspace @repo/ui add @mui/material@5.8.7 @mui/styled-engine @mui/styled-e
   }
 ```
 
-インストールされる `dependencies` は `npm:@mui/styled-engine-sc@latest` の形ではなく、特定バージョンの形として保持される。
-また、`@mui/styled-engine@5.0.0` の形でインストールした場合、`packages/ui/package.json` のバージョンには `5.0.0` が記載される。
-一方、`yarn.lock` には `5.0.0` が存在せず、`latest` のバージョン（今回であれば `7.0.1`）が記載されるため、resolutions が効いているようにも見える。
-
 The installed `dependencies` are kept in the form of specific versions rather than `npm:@mui/styled-engine-sc@latest`.
 Also, when installing in the form of `@mui/styled-engine@5.0.0`, the version `5.0.0` is written in `packages/ui/package.json`.
 However, `5.0.0` does not exist in `yarn.lock`, and instead the `latest` version (in this case `7.0.1`) is listed, suggesting that resolutions are working.
